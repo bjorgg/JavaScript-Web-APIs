@@ -10,3 +10,6 @@ and displays remove from favorites. You can click on the remove button
 on either page to remove the plant from the favorite page. The plant
 array is set to local storage so the plants stay as favorites when you
 refresh.
+
+Here is a link to the live version:
+<https://bjorgg.github.io/JavaScript-Web-APIs>
