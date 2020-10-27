@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+body {
+    --nav-width: 200px;
+    margin: 0 0 0 var(--nav-width);
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
+    background-color: #f5f4f2;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+/* Creates a full-height, left-mounted navigation menu */
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: var(--nav-width);
+    height: 100vh;
+    background: #33614b;
+    padding-top: 50px;
+}
+
+/* Making these look fantastic */
+.nav-link {
+    display: block;
+    padding: 12px 18px;
+    text-decoration: none;
+    color: #eeeeee;
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+
+#app {
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+.page {
+    display: none;
+    width: 100%;
+    min-height: 100%;
+    /* position: fixed; */
+    padding: 1rem 2rem;
+}
+.active {
+    display: block;
+}
+
+#home {
+    background-image: url(images/cover-plant.jpg);
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    height: 100%;
+    width: calc(100% - var(--nav-width));
+   
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+.grid-item {
+    background-color: white;
+    padding: 10px;
+}
+
+.img {
+    width: 100%;
+}
+
+button {
+    background-color: #33614b;
+    color: white;
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 4px;
+    border: none;
+    margin: 10px 15px 10px 0px;
+}
+
+.plant-info {
+    display: none;
+}
